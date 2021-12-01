@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../makeup/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.RoomController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="526.0" prefHeight="52.0" prefWidth="535.0" styleClass="submitpanel" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
+         <children>
+            <Button id="uploadimage" layoutX="19.0" layoutY="4.0" mnemonicParsing="false" onMousePressed="#sendImageHandle" prefHeight="35.0" prefWidth="35.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="9.0" />
+            <Button id="uploadfile" layoutX="69.0" layoutY="11.0" mnemonicParsing="false" onMousePressed="#sendFileHandle" prefHeight="35.0" prefWidth="35.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="75.0" />
+            <Button id="send" layoutX="467.0" layoutY="11.0" mnemonicParsing="false" onMousePressed="#sendButtonHandle" prefHeight="35.0" prefWidth="35.0" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0" />
+            <TextField fx:id="messageInput" layoutX="147.0" layoutY="11.0" prefHeight="38.0" prefWidth="353.0" promptText="Edit your message" style="-fx-padding: 0 40px 0 10px; -fx-border-color: transparent; -fx-background-color: white;" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="7.0" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="14.0" prefHeight="507.0" prefWidth="535.0" styleClass="chatpanel" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <ScrollPane fx:id="scrollMessage" layoutX="83.0" layoutY="61.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <FlowPane fx:id="broadcastMessagePanel" alignment="BOTTOM_CENTER" maxWidth="513.0" prefHeight="505.0" prefWidth="513.0" rowValignment="BOTTOM" vgap="10.0">
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="238.0" layoutY="22.0" prefHeight="60.0" prefWidth="221.0" styleClass="navigationpanel" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Button id="logoutbutton" layoutX="94.0" layoutY="13.0" mnemonicParsing="false" onMousePressed="#logoutHandle" prefHeight="34.0" prefWidth="34.0" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="13.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="592.0" layoutY="69.0" prefHeight="334.0" prefWidth="221.0" style="-fx-background-color: #0373fc1A;" styleClass="userlandpanel" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="4.0" prefHeight="35.0" prefWidth="177.0" styleClass="lanusertext" text="LAN User Active" textFill="#4b91fa" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane hbarPolicy="NEVER" layoutX="8.0" layoutY="40.0" pannable="true" prefHeight="285.0" prefWidth="207.0" styleClass="scroll-bar" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="43.0">
+               <content>
+                  <FlowPane fx:id="userOnlinePanel" alignment="TOP_CENTER" columnHalignment="CENTER" maxWidth="190.0" prefHeight="5.0" prefWidth="185.0" prefWrapLength="200.0" vgap="5.0">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding></FlowPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="577.0" layoutY="443.0" prefHeight="148.0" prefWidth="220.0" styleClass="chatpanel" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <ScrollPane fx:id="scrollLogger" fitToWidth="true" hbarPolicy="NEVER" layoutX="11.0" layoutY="48.0" pannable="true" prefHeight="112.0" prefWidth="207.0" styleClass="scroll-bar" vbarPolicy="NEVER" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="43.0">
+               <content>
+                  <FlowPane fx:id="loggerPanel" maxWidth="200.0" prefWidth="200.0" vgap="5.0">
+                     <padding>
+                        <Insets left="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <VBox fx:id="vBoxLogger" maxWidth="200.0" prefHeight="0.0" prefWidth="200.0" />
+                     </children>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+            <Label alignment="CENTER" layoutX="4.0" layoutY="-5.0" prefHeight="35.0" prefWidth="221.0" styleClass="lanusertext" text="Logger" textFill="#4b91fa" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

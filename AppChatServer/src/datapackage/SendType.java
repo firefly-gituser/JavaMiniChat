@@ -1,0 +1,7 @@
+package datapackage;
+
+public enum SendType {
+	SINGLE,BROADCAST,LOGIN,LOGOUT,
+	LOGINBROADCAST, SIGNUP,ROOMINFO,
+	MINICHATINIT
+}

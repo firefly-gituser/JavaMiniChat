@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="535.0" style="-fx-background-color: #0373fc1A;" stylesheets="@../makeup/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.MiniChatController">
+   <children>
+      <ScrollPane fx:id="scrollMessage" hbarPolicy="NEVER" layoutX="50.0" layoutY="14.0" prefHeight="360.0" prefWidth="528.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <FlowPane fx:id="messagePane" alignment="BOTTOM_CENTER" maxWidth="513.0" prefHeight="356.0" prefWidth="513.0" />
+         </content></ScrollPane>
+      <Button id="uploadimage" layoutX="13.0" layoutY="357.0" mnemonicParsing="false" onMousePressed="#sendImageMiniChat" prefHeight="36.0" prefWidth="36.0" AnchorPane.bottomAnchor="1.0" />
+      <Button id="uploadfile" layoutX="90.0" layoutY="364.0" mnemonicParsing="false" onMousePressed="#sendFileMiniChat" prefHeight="36.0" prefWidth="36.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="55.0" />
+      <TextField fx:id="contentMiniChat" layoutX="101.0" layoutY="364.0" prefHeight="33.0" prefWidth="386.0" promptText="Edit your message" style="-fx-border-color: transparent; -fx-background-color: white; -fx-background-radius: 15px;" />
+      <Button id="send" layoutX="428.0" layoutY="364.0" mnemonicParsing="false" onMousePressed="#sendMiniChat" prefHeight="35.0" prefWidth="38.0" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+   </children>
+</AnchorPane>

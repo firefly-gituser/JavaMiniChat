@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane fx:id="mesageBase" maxHeight="-Infinity" maxWidth="513.0" prefHeight="0.0" prefWidth="513.0" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.MessageController">
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <children>
+      <FlowPane fx:id="messagePanel" maxWidth="350.0" prefHeight="0.0" prefWidth="0.0" prefWrapLength="250.0" style="-fx-padding: 10; -fx-background-color: #0373fc1A; -fx-background-radius: 5;" vgap="5.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <VBox fx:id="vBox" spacing="5.0">
+               <children>
+                  <Label fx:id="nameLabel" style="-fx-pref-width: 1em; -fx-background-radius: 5px; -fx-padding: 2px;" />
+               </children>
+            </VBox>
+         </children></FlowPane>
+   </children>
+</FlowPane>

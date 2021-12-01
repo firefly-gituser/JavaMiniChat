@@ -1,0 +1,89 @@
+.scroll-pane,.chatpanel, .submitpanel, .navigationpanel, .userlanpanel{
+    -fx-background-color:  #0373fc1A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+	-fx-width:1px;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #0373fc1A;
+    -fx-background-radius: 5em;
+}
+/*--------------------------------------------------*/
+
+.button, .combo-box{
+	-fx-background-color:transparent;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 35 35;
+    	
+}
+
+.lanusertext{
+	-fx-text-fill: #4b90fc;
+}
+
+.loginpanel{
+	-fx-background-image: url('../../flat/login.png');
+	-fx-background-size: cover;
+}
+
+.signuppanel{
+	-fx-background-image: url('../../flat/signup.jpg');
+	-fx-background-size: cover;
+}
+
+#notifybutton{
+	-fx-background-image: url('../../flat/bell.png');
+}
+
+
+#logoutbutton{
+	-fx-background-image: url('../../flat/exit.png');
+}
+
+#loginbutton{
+	-fx-background-color:#4b90fc33;
+}
+
+#loginbutton:hover{
+	-fx-background-color:#4b90fcBD;
+}
+
+#uploadfile{
+	-fx-background-image: url('../../flat/upload.png');
+}
+
+
+#uploadimage{
+	-fx-background-image: url('../../flat/image.png');
+}
+
+#send{
+	-fx-background-image: url('../../flat/direct.png');
+}
+
+#animation{
+	-fx-background-image: url('../../flat/animation.png');
+	-fx-background-size: 30 30;
+}
+
+#closeNotify{
+	-fx-background-image: url('../../flat/close.png');
+	-fx-background-size: 25 25;
+	-fx-opacity:0.5;
+}

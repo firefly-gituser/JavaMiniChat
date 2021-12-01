@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="424.0" style="-fx-border-color: #4b90fc; -fx-border-width: 1px; -fx-background-color: white;" stylesheets="@../makeup/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.NotificationsController">
+   <children>
+      <Text fx:id="FXtitle" fill="#4b90fc" fontSmoothingType="LCD" layoutX="93.0" layoutY="28.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="388.0" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="FXcontent" layoutX="93.0" layoutY="28.0" prefHeight="80.0" prefWidth="406.0" text="srbvear v erv w t vwt b wt b 5t b ety b ety e tryn eyn tn6ry n ry rtdb rj jwr jwjgw4j5gj w4j5gjw4j" wrapText="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="27.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fx:id="FXicon" fitHeight="66.0" fitWidth="66.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutY="2.0" onMousePressed="#requestFocus" prefHeight="112.0" prefWidth="510.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+      <Button id="closeNotify" layoutX="473.0" layoutY="2.0" mnemonicParsing="false" onMousePressed="#closeNotify" prefHeight="25.0" prefWidth="25.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0" />
+   </children>
+</AnchorPane>

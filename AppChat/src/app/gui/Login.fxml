@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: white;" stylesheets="@../makeup/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.LoginController">
+   <children>
+      <AnchorPane layoutX="-26.0" layoutY="66.0" prefHeight="200.0" prefWidth="281.0" styleClass="loginpanel" />
+      <Label alignment="CENTER" layoutX="85.0" layoutY="14.0" prefHeight="47.0" prefWidth="281.0" style="-fx-text-fill: #4b90fc;" text="Mini Chat Center" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="237.0" layoutY="135.0" prefHeight="31.0" prefWidth="199.0" promptText="Username" style="-fx-background-color: #4b90fc33;" />
+      <PasswordField fx:id="passwordField" layoutX="237.0" layoutY="196.0" prefHeight="31.0" prefWidth="199.0" promptText="Password" style="-fx-background-color: #4b90fc33;" />
+      <Label alignment="CENTER" layoutX="281.0" layoutY="78.0" text="Login now">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button id="loginbutton" layoutX="275.0" layoutY="249.0" mnemonicParsing="false" onMousePressed="#loginHandle" prefHeight="35.0" prefWidth="123.0" style="-fx-label-padding: 0; -fx-padding: 0;" text="Login" AnchorPane.bottomAnchor="16.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="37.0" layoutY="263.0" text="Create your account" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="24.0" />
+      <Button layoutX="154.0" layoutY="263.0" mnemonicParsing="false" onMousePressed="#openSignupHandle" prefHeight="19.0" prefWidth="59.0" style="-fx-padding: 0; -fx-text-fill: #4b90fc;" text="here" underline="true" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="145.0" />
+      <AnchorPane fx:id="signupPanel" layoutX="-450.0" prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="180.0" layoutY="42.0" prefHeight="200.0" prefWidth="263.0" styleClass="signuppanel" />
+            <Button id="closeNotify" layoutX="371.0" layoutY="8.0" mnemonicParsing="false" onMousePressed="#closeSignupHandle" prefHeight="15.0" prefWidth="26.0" style="-fx-padding: 5px;" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <PasswordField fx:id="signup_password" layoutX="20.0" layoutY="174.0" prefHeight="31.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: #4b90fc33;" AnchorPane.leftAnchor="20.0" />
+            <TextField fx:id="signup_username" layoutX="20.0" layoutY="128.0" prefHeight="31.0" prefWidth="200.0" promptText="Username" style="-fx-background-color: #4b90fc33;" AnchorPane.leftAnchor="20.0" />
+            <Label alignment="CENTER" layoutX="20.0" layoutY="3.0" text="Sign up now">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="signup_confirm" layoutX="20.0" layoutY="218.0" prefHeight="31.0" prefWidth="200.0" promptText="Confirm Password" style="-fx-background-color: #4b90fc33;" AnchorPane.leftAnchor="20.0" />
+            <TextField fx:id="signup_name" layoutX="1.0" layoutY="44.0" prefHeight="31.0" prefWidth="200.0" promptText="Full name" style="-fx-background-color: #4b90fc33;" AnchorPane.leftAnchor="20.0" />
+            <ComboBox fx:id="signup_gender" layoutX="19.0" layoutY="83.0" prefWidth="200.0" promptText="Gender" style="-fx-background-color: #4b90fc33;" AnchorPane.leftAnchor="20.0" />
+            <Button id="loginbutton" layoutX="22.0" layoutY="258.0" mnemonicParsing="false" onMousePressed="#signupHandle" text="Sign up" AnchorPane.leftAnchor="20.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
